@@ -6,19 +6,25 @@ import Header from "./Header"
 import {withRouter} from 'react-router';
 
 function NewsArticle({articles}) {
+	const newsStyle = {
+		padding: '20px'
+	}
+	const newsCard = {
+		backgroundColor: "blue"
+	}
 	return (
 		<div>
 			<h1
 			class="d-flex mx-auto justify-content-center"
-			style={{width: "200px",}}
+			style={newsStyle}
 			>News Articles of the World!</h1>
 			<br/>
 			<Header 
 			/>
-			<br/>
+			
 			<NewsCard 
 			articles={articles} 
-			style={{display: "flex",}}
+			
 			/>			
 		</div>
 	);

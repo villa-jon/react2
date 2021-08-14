@@ -2,7 +2,7 @@ import React from "react"
 import SearchBar from "./SearchBar"
 import {Button} from "react-bootstrap"
 import {withRouter} from 'react-router';
-
+import './Header.css'
 function Header({input, onChange}) {	
 
 	return (

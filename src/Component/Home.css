@@ -1,0 +1,11 @@
+.homeStyle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 75%;
+	flex-direction: column;
+	margin: 0 auto;
+	padding-top: 30px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bolder;
+}

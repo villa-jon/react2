@@ -4,11 +4,23 @@ import React from "react"
 import {withRouter} from 'react-router';
 
 function Gen1() {
+	const faqStyle = {
+		display: 'flex', 
+		alignItems: 'center', 
+		justifyContent: "center",
+		flexDirection: 'column',
+		paddingTop: '20px',
+		fontFamily: 'Montserrat',
+		fontWeight: 'bolder'
+	}
 	return (	
-		<div>
+		<div style={faqStyle}>
 			<h1>FAQ: Frequently Asked Questions</h1>
-			<ul></ul>
-			<li></li>
+			<ul>
+				<li>
+					sure
+				</li>
+			</ul>
 		</div>
 	)
 }
