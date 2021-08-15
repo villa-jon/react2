@@ -13,7 +13,7 @@ function NewsArticle({articles}) {
 		backgroundColor: "blue"
 	}
 	return (
-		<div>
+		<div style={newsCard}>
 			<h1
 			class="d-flex mx-auto justify-content-center"
 			style={newsStyle}
@@ -21,7 +21,7 @@ function NewsArticle({articles}) {
 			<br/>
 			<Header 
 			/>
-			
+		
 			<NewsCard 
 			articles={articles} 
 			

@@ -11,6 +11,10 @@ const aki = "http://api.mediastack.com/v1/news?access_key=19eb13b51a527ab54654d8
 function App() {
   const [articles, setArticles] = useState([])
 
+  const newsCard = {
+		backgroundColor: "blue"
+	}
+
 	useEffect(() => {
 		      console.log("useEffect");
 		      fetch(aki)
@@ -22,7 +26,7 @@ function App() {
 		    }, []);
   
   return (
-    <div className="App">
+    <div className="App" style={newsCard}>
     <Router>
     <NavBar />
     <Switch>

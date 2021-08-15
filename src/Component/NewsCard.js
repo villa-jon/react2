@@ -1,6 +1,6 @@
 import React from "react"
 import "./NewsCard.css"
-import { Card, Button, Container, Row, Col } from "react-bootstrap"
+import { Card, Button } from "react-bootstrap"
 
 function NewsCard({articles}){
 const tasksthing = articles.map((article) => 

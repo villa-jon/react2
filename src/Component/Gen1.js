@@ -14,12 +14,23 @@ function Gen1() {
 		fontWeight: 'bolder'
 	}
 	return (	
-		<div style={faqStyle}>
+		<div 
+		style={faqStyle}
+		>
 			<h1>FAQ: Frequently Asked Questions</h1>
 			<ul>
 				<li>
-					sure
+					What is this about? 
 				</li>
+				<li>
+					This is a website that caters towards the truth and how the truth is presented in the media. 
+				</li>
+				<li>
+					Why create a website like this?  
+				</li>
+				<li>
+					To show what the media and news looks like around the world. 
+				</li>				
 			</ul>
 		</div>
 	)
