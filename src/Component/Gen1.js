@@ -2,6 +2,7 @@ import React from "react"
 // import SearchBar from "./SearchBar"
 // import { FloatingLabel, Form, Button } from "react-bootstrap";
 import {withRouter} from 'react-router';
+import FilterButton from './Button'; 
 
 function Gen1() {
 	const faqStyle = {
@@ -32,6 +33,9 @@ function Gen1() {
 					To show what the media and news looks like around the world. 
 				</li>				
 			</ul>
+			<div>
+			<FilterButton />	
+			</div>
 		</div>
 	)
 }

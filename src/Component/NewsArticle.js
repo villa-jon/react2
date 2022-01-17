@@ -5,26 +5,34 @@ import NewsCard from "./NewsCard"
 import Header from "./Header"
 import {withRouter} from 'react-router';
 
-function NewsArticle({articles}) {
+// Parent
+
+function NewsArticle({articles, search, setSearch}) {
+
 	const newsStyle = {
-		padding: '20px'
+		fontFamily: 'Montserrat',
+		fontWeight: 'bolder',
+		// padding: '20px'
 	}
 	const newsCard = {
-		backgroundColor: "blue"
+		backgroundColor: "#A7C7E7"
 	}
+
 	return (
 		<div style={newsCard}>
 			<h1
-			class="d-flex mx-auto justify-content-center"
+			className="d-flex mx-auto justify-content-center"
 			style={newsStyle}
 			>News Articles of the World!</h1>
-			<br/>
-			<Header 
+			{/* <br/> */}
+			<Header
+			articles={articles} 
+			search={search} 
+			setSearch={setSearch}
 			/>
-		
 			<NewsCard 
 			articles={articles} 
-			
+			// search={search}
 			/>			
 		</div>
 	);
